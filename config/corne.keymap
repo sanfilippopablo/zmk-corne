@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -111,6 +112,15 @@
 &kp SQT    &kp SEMI  &kp L    &kp K      &kp J   &kp H     &kp G   &kp F   &kp D   &kp S  &kp A  &kp LCTRL
 &kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N     &kp B   &kp V   &kp C   &kp X  &kp Z  &kp LSHFT
                               &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        adjust {
+            bindings = <
+&trans      &soft_off     &bootloader   &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
