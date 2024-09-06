@@ -51,11 +51,6 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
         };
-
-        swap {
-            bindings = <&sl 3>;
-            key-positions = <40 41>;
-        };
     };
 
     behaviors {
